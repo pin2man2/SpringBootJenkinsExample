@@ -15,10 +15,6 @@ public class SpringBootJenkinsExampleApplication extends SpringBootServletInitia
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootJenkinsExampleApplication.class, args);
 	}
-	  @Override
-	   protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-	      return application.sources(SpringBootJenkinsExampleApplication.class);
-	   }
 	  @RequestMapping(value = "/",method = RequestMethod.GET)
 	   public String hello() {
 	      return "Hello World from Tomcat";
